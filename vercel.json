@@ -24,8 +24,8 @@
     }
   ],
   "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "JWT_SECRET": "@jwt_secret",
+    "MONGODB_URI": "mongodb+srv://kshivam0508_db_user:u83o5gbvhNy6H6KU@cluster0.iy0pxnt.mongodb.net/",
+    "JWT_SECRET": "jkfassuhqouwehgoihwiguj988q35687q6ywnqwqye",
     "NODE_ENV": "production"
   }
 }
