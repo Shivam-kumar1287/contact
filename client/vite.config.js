@@ -8,13 +8,15 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true
+        target: 'http://localhost:3389',
+        changeOrigin: true,
+        secure: false
       }
     }
   },
   build: {
     outDir: 'dist',
     assetsDir: 'assets'
-  }
+  },
+  base: './'  // Added base path for proper module loading
 })

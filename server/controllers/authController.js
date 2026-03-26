@@ -37,6 +37,9 @@ const register = async (req, res) => {
       });
     }
 
+    console.log("Email:", email);
+    console.log("Password:", password);
+
     // Check if user already exists
     const existingUser = await User.findOne({ email: email.toLowerCase() });
     if (existingUser) {
@@ -52,6 +55,8 @@ const register = async (req, res) => {
       email: email.toLowerCase(),
       password
     });
+    await user.save();
+
 
     // Generate token
     const token = generateToken(user._id);

@@ -8,7 +8,7 @@ const {
   updateContact,
   deleteContact
 } = require('../controllers/contactController');
-const { protect } = require('../middleware/authMiddleware');
+const protect = require('../middleware/authMiddleware');
 
 // Apply authentication middleware to all routes
 router.use(protect);
