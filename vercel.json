@@ -19,6 +19,9 @@
       "dest": "/server/server-auth-demo.js"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
       "dest": "/client/index.html"
     }
